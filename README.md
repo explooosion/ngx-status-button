@@ -10,7 +10,7 @@ This is a button status design by colder build with angular7.
 
 Inspired by [UI Movement](https://uimovement.com) - [In-button status](https://uimovement.com/ui/6526/in-button-status/)。
 
-👉 [DEMO](http://robby570.tw/ngx-status-button)
+![](https://i.imgur.com/9vMoeMh.gif)
 
 ## Installation
 
