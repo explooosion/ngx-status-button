@@ -1,0 +1,21 @@
+@keyframes dot {
+    0% { top: 10%; }
+    30% { top: 0%; }
+    60% { top: 10%; }
+    100% { top: 10%; }
+  }
+  
+@-webkit-keyframes dot {
+    0% { top: 10%; }
+    30% { top: 0%; }
+    60% { top: 10%; }
+    100% { top: 10%; }
+}
+
+@-moz-keyframes dot {
+    0% { top: 10%; }
+    30% { top: 0%; }
+    60% { top: 10%; }
+    100% { top: 10%; }
+}
+  

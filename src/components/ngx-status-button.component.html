@@ -1,0 +1,11 @@
+<div class="ng-status" [ngClass]="getStatus()">
+    <div class="pay" (click)="onStatusI()">{{ stepNameI }}</div>
+    <div class="processing">
+        {{ stepNameII }}
+        <span class="dot dot-1">．</span>
+        <span class="dot dot-2">．</span>
+        <span class="dot dot-3">．</span>
+    </div>
+    <div class="success">{{ stepNameIII }}</div>
+    <div class="proceed">{{ stepNameIV }}</div>
+</div>

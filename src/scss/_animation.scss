@@ -1,0 +1,21 @@
+%animation {
+  -webkit-animation: dot 1s ease-in-out infinite;
+  -moz-animation: dot 1s ease-in-out infinite;
+  -o-animation: dot 1s ease-in-out infinite;
+  animation: dot 1s ease-in-out infinite;
+}
+
+%transition {
+  -webkit-transition: top .35s ease-in-out;
+  -moz-transition: top .35s ease-in-out;
+  -o-transition: top .35s ease-in-out;
+  transition: top .35s ease-in-out;
+}
+
+@mixin animation-delay($delay: 0s) {
+  -webkit-animation-delay: $delay;
+  -moz-animation-delay: $delay;
+  -o-animation-delay: $delay;
+  animation-delay: $delay;
+}
+  

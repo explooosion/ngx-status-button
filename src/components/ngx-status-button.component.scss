@@ -1,0 +1,124 @@
+@import '../scss/keyframe';
+@import '../scss/animation';
+$width: 500px;
+$height: 80px;
+$font-size: 2rem;
+$font-family: 'Arial', Tahoma, Geneva, Verdana, sans-serif;
+
+%button {
+  @extend %transition;
+  position: absolute;
+  top: 0;
+  width: inherit;
+  height: inherit;
+  font-size: $font-size;
+  font-family: $font-family;
+  text-align: center;
+  line-height: inherit;
+  cursor: pointer;
+}
+
+%blue-theme {
+  color: #fff;
+  background: -webkit-linear-gradient(45deg, #59bcff 0%, #6fa6ff 50%);
+  background: -moz-linear-gradient(45deg, #59bcff 0%, #6fa6ff 50%);
+  background: -o-linear-gradient(45deg, #59bcff 0%, #6fa6ff 50%);
+  background: linear-gradient(45deg, #59bcff 0%, #6fa6ff 50%);
+}
+
+%gray-theme {
+  color: #8092ac;
+  background-color: #fff;
+}
+
+%green-theme {
+  color: #4db58c;
+  background-color: #fff;
+}
+
+.ng-status {
+  position: relative;
+  overflow: hidden;
+  width: $width;
+  height: $height;
+  line-height: $height;
+  background-color: #fff;
+  border-radius: 2rem;
+
+  &.status2 {
+    .processing {
+      top: 0;
+    }
+
+    .pay {
+      top: 80px;
+    }
+  }
+
+  &.status3 {
+    .success {
+      top: 0;
+    }
+
+    .processing {
+      top: 80px;
+    }
+  }
+
+  &.status4 {
+    .success {
+      color: #fff;
+    }
+
+    .proceed {
+      top: 0;
+    }
+  }
+
+  .pay {
+    @extend %button, %blue-theme;
+    top: 0;
+    z-index: 1;
+  }
+
+  .processing {
+    @extend %button, %gray-theme;
+    top: -80px;
+    z-index: 2;
+
+    .dot {
+      @extend %animation;
+      position: absolute;
+      top: 10%;
+      color: inherit;
+      background-color: transparent;
+
+      &.dot-1 {
+        @include animation-delay();
+        left: 65%;
+      }
+
+      &.dot-2 {
+        @include animation-delay(.1s);
+        left: 67%;
+      }
+
+      &.dot-3 {
+        @include animation-delay(.2s);
+        left: 69%;
+      }
+    }
+  }
+
+  .success {
+    @extend %button, %green-theme;
+    top: -80px;
+    z-index: 3;
+  }
+
+  .proceed {
+    @extend %button, %blue-theme;
+    top: 80px;
+    z-index: 4;
+  }
+}
