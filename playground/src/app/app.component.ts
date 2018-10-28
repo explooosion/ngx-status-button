@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'In-Button-Status';
+  title = 'ngx-status-button';
   step = 1;
 
   onNext() {
