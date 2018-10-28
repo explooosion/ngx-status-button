@@ -120,5 +120,6 @@ $font-family: 'Arial', Tahoma, Geneva, Verdana, sans-serif;
     @extend %button, %blue-theme;
     top: 80px;
     z-index: 4;
+    cursor: not-allowed;
   }
 }
