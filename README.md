@@ -15,6 +15,46 @@ Inspired by [UI Movement](https://uimovement.com) - [In-button status](https://u
 ## Installation
 
 ```sh
+yarn add ngx-status-button # not yet
+```
+
+### Importing Modules
+
+app.module.ts
+
+```typescript
+import { NgxStatusButtonModule } from 'ngx-status-button';
+
+@NgModule({
+  // ...
+  imports: [
+    NgxStatusButtonModule,
+  ],
+  // ...
+})
+```
+
+### Usage
+
+HTML
+
+```html
+<ngx-status-button [step]="step" (click)="onNext()"></ngx-status-button>
+```
+
+TS
+
+```typescript
+step = 1;
+
+onNext() {
+  this.step++;
+}
+```
+
+## Development
+
+```sh
 git clone https://github.com/explooosion/ngx-status-button.git
 ```
 
