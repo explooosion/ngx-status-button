@@ -34,11 +34,7 @@ import sourcemaps from 'rollup-plugin-sourcemaps';
 const globals = {
     '@angular/core': 'ng.core',
     '@angular/common': 'ng.common',
-    '@angular/forms': 'ng.forms',
-    '@angular/compiler': 'ng.compiler',
     '@angular/platform-browser': 'ng.platformBrowser',
-    '@angular/animations': 'ng.animations',
-    '@angular/animations/browser': 'ng.animations.browser',
     'rxjs': 'rxjs',
     'rxjs/operators': 'rxjs.operators'
 };
