@@ -12,10 +12,20 @@ Inspired by [UI Movement](https://uimovement.com) - [In-button status](https://u
 
 ![](https://i.imgur.com/9vMoeMh.gif)
 
+
 ## Installation
 
-```sh
-yarn add ngx-status-button # not yet
+Installation is done using the
+[`npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
+
+- Use npm
+```bash
+npm install --save ngx-status-button
+```
+
+- Use yarn
+```bash
+yarn add ngx-status-button
 ```
 
 ### Importing Modules
