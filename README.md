@@ -26,11 +26,9 @@ app.module.ts
 import { NgxStatusButtonModule } from 'ngx-status-button';
 
 @NgModule({
-  // ...
   imports: [
     NgxStatusButtonModule,
   ],
-  // ...
 })
 ```
 
@@ -39,7 +37,11 @@ import { NgxStatusButtonModule } from 'ngx-status-button';
 HTML
 
 ```html
-<ngx-status-button [step]="step" (click)="onNext()"></ngx-status-button>
+<ngx-status-button 
+  [step]="step" 
+  (click)="onNext()"
+>
+</ngx-status-button>
 ```
 
 TS
@@ -48,8 +50,45 @@ TS
 step = 1;
 
 onNext() {
-  this.step++;
+
+  // stop at step 4
+  this.step = this.step >= 4 ? 4 : this.step + 1;
+
+  // cycle step
+  this.step = this.step >= 4 ? 1 : this.step + 1;
 }
+```
+
+## Input
+
+```typescript
+// Status button name
+@Input() public stepNameI: String = 'Pay';
+@Input() public stepNameII: String = 'Processing';
+@Input() public stepNameIII: String = 'Success!';
+@Input() public stepNameIV: String = 'Proceed';
+
+// Step 1~4 to control animation
+@Input() public step: number;
+```
+
+### Change step name
+
+You can change the step name for 1~4.
+
+HTML
+
+```html
+<ngx-status-button 
+  [stepNameI]="stepNameI"
+>
+</ngx-status-button>
+```
+
+TS
+
+```typescript
+stepNameI = 'your-step-name';
 ```
 
 ## Development
