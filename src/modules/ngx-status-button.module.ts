@@ -1,8 +1,5 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
-
 import { BrowserModule } from '@angular/platform-browser';
-// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { FormsModule } from '@angular/forms';
 
 import { NgxStatusButtonService } from '../services/ngx-status-button.service';
 import { NgxStatusButtonComponent } from '../components/ngx-status-button.component';
@@ -16,8 +13,6 @@ import { NgxStatusButtonComponent } from '../components/ngx-status-button.compon
     ],
     imports: [
         BrowserModule,
-        // BrowserAnimationsModule,
-        // FormsModule,
     ],
     exports: [
         // Pipes.

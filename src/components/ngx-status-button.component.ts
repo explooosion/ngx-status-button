@@ -39,6 +39,6 @@ export class NgxStatusButtonComponent implements OnInit, OnChanges {
         // tslint:disable-next-line:curly
         if (typeof step.previousValue === 'undefined' || step.firstChange) return;
 
-        this.ngxService.next();
+        this.ngxService.setStep(this.step);
     }
 }

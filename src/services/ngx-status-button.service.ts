@@ -22,17 +22,14 @@ export class NgxStatusButtonService {
         return of(this.statusClass);
     }
 
-    public update(status: string) {
+    public update(status: string): void {
         Object.keys(this.statusClass).forEach((key: string) => {
             this.statusClass[key] = status === key ? true : false;
         });
     }
 
-    public next() {
-        // tslint:disable-next-line:curly
-        if (this.statusStep >= 4) return;
-
-        this.statusStep++;
+    public setStep(step: number): void {
+        this.statusStep = step;
         switch (this.statusStep) {
             case 1:
                 this.update('');
