@@ -10,6 +10,6 @@ export class AppComponent {
   step = 1;
 
   onNext() {
-    this.step++;
+    this.step = this.step >= 4 ? 1 : this.step + 1;
   }
 }
