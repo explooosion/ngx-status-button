@@ -1,8 +1,9 @@
 @import '../scss/keyframe';
 @import '../scss/animation';
-$width: 500px;
-$height: 80px;
-$font-size: 2rem;
+
+$width: 300px;
+$height: 50px;
+$font-size: 1.4rem;
 $font-family: 'Arial', Tahoma, Geneva, Verdana, sans-serif;
 
 %button {
@@ -39,9 +40,11 @@ $font-family: 'Arial', Tahoma, Geneva, Verdana, sans-serif;
 .ng-status {
   position: relative;
   overflow: hidden;
+  /* input value */
   width: $width;
   height: $height;
   line-height: $height;
+  /* input value */
   background-color: #fff;
   border-radius: 2rem;
 
@@ -51,7 +54,7 @@ $font-family: 'Arial', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     .pay {
-      top: 80px;
+      top: 50px;
     }
   }
 
@@ -61,7 +64,7 @@ $font-family: 'Arial', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     .processing {
-      top: 80px;
+      top: 50px;
     }
   }
 
@@ -83,7 +86,7 @@ $font-family: 'Arial', Tahoma, Geneva, Verdana, sans-serif;
 
   .processing {
     @extend %button, %gray-theme;
-    top: -80px;
+    top: -50px;
     z-index: 2;
 
     .dot {
@@ -95,30 +98,30 @@ $font-family: 'Arial', Tahoma, Geneva, Verdana, sans-serif;
 
       &.dot-1 {
         @include animation-delay();
-        left: 65%;
+        left: 69%;
       }
 
       &.dot-2 {
         @include animation-delay(.1s);
-        left: 67%;
+        left: 71%;
       }
 
       &.dot-3 {
         @include animation-delay(.2s);
-        left: 69%;
+        left: 73%;
       }
     }
   }
 
   .success {
     @extend %button, %green-theme;
-    top: -80px;
+    top: -50px;
     z-index: 3;
   }
 
   .proceed {
     @extend %button, %blue-theme;
-    top: 80px;
+    top: 50px;
     z-index: 4;
     cursor: not-allowed;
   }

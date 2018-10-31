@@ -1,6 +1,6 @@
 {
     "name": "ngx-status-button",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "This is a button status design by colder build with angular7.",
     "main": "./bundles/ngx-status-button.umd.js",
     "module": "./fesm5/ngx-status-button.js",
